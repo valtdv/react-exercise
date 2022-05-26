@@ -1,0 +1,35 @@
+.task {
+  position: relative;
+  padding: 14px;
+  width: 259px;
+  height: 169px;
+  background: #ffe8a5;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.task__footer {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.complete-task {
+  text-decoration: line-through;
+}
+
+.task__timer {
+  font-size: 13px;
+  line-height: 15px;
+  text-align: right;
+}
+
+.task__btn {
+  width: 136px;
+  height: 26px;
+  background: #ffffff;
+  border: 0;
+  border-radius: 13px;
+}

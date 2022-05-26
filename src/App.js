@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
+import Sidebar from './components/Sidebar';
+import Task from './components/Task';
 
 function App() {
+  const [tasks, setTasks] = useState([]);
+  const [taskStatus, setTaskStatus] = useState([0, 0]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sidebar tasks={tasks} setTasks={setTasks} taskStatus={taskStatus} setTaskStatus={setTaskStatus} />
+      <div className="task-container">
+        {tasks.map((task, i) => {
+          if (task.isComplete === false) 
+            return <Task key={i} index={i} task={task} tasks={tasks} setTasks={setTasks} taskStatus={taskStatus} setTaskStatus={setTaskStatus} /> 
+          })
+        }
+        {tasks.map((task, i) => {
+          if (task.isComplete === true) 
+            return <Task key={i} index={i} task={task} tasks={tasks} setTasks={setTasks} taskStatus={taskStatus} setTaskStatus={setTaskStatus} /> 
+          })
+        }
+      </div>
     </div>
   );
 }

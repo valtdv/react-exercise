@@ -1,0 +1,58 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 45px;
+  width: 400px;
+  height: 100%;
+  background: #FFE8A5;
+}
+
+.sidebar__label {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.sidebar__text-area {
+  margin-top: 25px;
+  padding: 14px;
+  width: 311px;
+  height: 217px;
+  background: #FFFFFF;
+  border: 0;
+  border-radius: 22px;
+  resize: none;
+}
+
+.sidebar__btn {
+  display: block;
+  margin: 30px auto auto;
+  width: 165px;
+  height: 58px;
+  font-size: 22px;
+  background: #FFFFFF;
+  border: 0;
+  border-radius: 45px;
+}
+
+.sidebar__info {
+  margin-top: 90px;
+}
+
+.sidebar__info-container {
+  margin-bottom: 64px;
+}
+
+.sidebar__title {
+  font-weight: 300;
+  font-size: 37px;
+  line-height: 43px;
+  text-align: center;
+}
+
+.sidebar__text {
+  font-weight: 300;
+  font-size: 120px;
+  line-height: 141px;
+  text-align: center;
+}
